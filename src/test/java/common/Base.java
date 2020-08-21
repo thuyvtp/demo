@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
+
 import POM.LoginPage;
 
 public class Base {
@@ -23,11 +25,14 @@ public class Base {
 	public void after() {
 		driver.quit();
 }
+	
 	public void login()
 	{
 		LoginPage lgPage = new LoginPage(getDriver());
 		lgPage.InputUserName("thuytest38@gmail.com");
 		lgPage.InputPassword("123456");
+		
+		
 		lgPage.submit();
 	}
 	

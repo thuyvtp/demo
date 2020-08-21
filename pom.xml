@@ -30,8 +30,24 @@
           </systemProperties>
         </configuration>
         </plugin>
+        
+        
+        
+        
     </plugins>
   </build>
+  <repositories>
+		<repository>
+			<id>archiva.snapshots</id>
+			<url>http://archiva.dev.tiki.services/repository/snapshots</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
     <dependencies> 
 
 
@@ -61,6 +77,53 @@
             <artifactId>surefire-testng</artifactId>
             <version>3.0.0-M5</version>
           </dependency>
+          
+          
+          
+       <dependency>
+			<groupId>vn.tiki.qc</groupId>
+			<artifactId>common</artifactId>
+			<version>0.0.2.4-SNAPSHOT</version>
+		</dependency> 
+          
+          
+          <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>6.5.0</version>
+</dependency>
+          
+          <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+          <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>1.2.6</version>
+    <type>pom</type>
+</dependency>
+          <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+<dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>5.3.1</version>
+</dependency>
+          <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>15.0.2</version>
+</dependency>
+          
+          
   </dependencies>
+  
+  
   
 </project>

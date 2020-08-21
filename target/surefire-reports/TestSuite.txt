@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.32 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.945 s <<< FAILURE! - in TestSuite
+runner.CucumberRunner.runScenario["Login seller center", "Optional[Login]"](1)  Time elapsed: 0.051 s  <<< FAILURE!
+io.cucumber.core.exception.CucumberException: No backends were found. Please make sure you have a backend module on your CLASSPATH.
+
