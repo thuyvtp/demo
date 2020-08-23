@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-21T09:18:31Z" name="Default suite" finished-at="2020-08-21T09:18:32Z" duration-ms="835">
+  <suite started-at="2020-08-24T00:31:38 ICT" name="Test runner" finished-at="2020-08-24T00:31:47 ICT" duration-ms="8637">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@235ecd9f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CucumberRunner@41a0aa7d]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-08-21T09:18:31Z" name="Default test" finished-at="2020-08-21T09:18:32Z" duration-ms="835">
+    <test started-at="2020-08-24T00:31:38 ICT" name="Package with subpackages" finished-at="2020-08-24T00:31:47 ICT" duration-ms="8637">
       <class name="runner.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.CucumberRunner@235ecd9f]" started-at="2020-08-21T09:18:31Z" name="setUpClass" finished-at="2020-08-21T09:18:32Z" duration-ms="647" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.CucumberRunner@41a0aa7d]" started-at="2020-08-24T00:31:38 ICT" name="setUpClass" finished-at="2020-08-24T00:31:39 ICT" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@235ecd9f]" started-at="2020-08-21T09:18:32Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-21T09:18:32Z" duration-ms="74" status="FAIL">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CucumberRunner@41a0aa7d]" started-at="2020-08-24T00:31:39 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-24T00:31:47 ICT" duration-ms="8217" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -23,63 +23,27 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login]"]]>
+                <![CDATA["Login"]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.core.exception.CucumberException">
-            <message>
-              <![CDATA[No backends were found. Please make sure you have a backend module on your CLASSPATH.]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[io.cucumber.core.exception.CucumberException: No backends were found. Please make sure you have a backend module on your CLASSPATH.
-at io.cucumber.core.runtime.BackendServiceLoader.get(BackendServiceLoader.java:38)
-at io.cucumber.core.runtime.BackendServiceLoader.get(BackendServiceLoader.java:32)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:49)
-at java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)
-at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
-at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.NullPointerException
+at POM.LoginPage.InputUserName(LoginPage.java:31)
+at stepDefinitions.LoginTest.user_input_correct_email(LoginTest.java:27)
+at ✽.user input correct email(file:src/test/java/features/Login.feature:6)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.core.exception.CucumberException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@235ecd9f]" started-at="2020-08-21T09:18:32Z" name="tearDownClass" finished-at="2020-08-21T09:18:32Z" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@41a0aa7d]" started-at="2020-08-24T00:31:47 ICT" name="tearDownClass" finished-at="2020-08-24T00:31:47 ICT" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.CucumberRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Package with subpackages -->
+  </suite> <!-- Test runner -->
 </testng-results>

@@ -1,3 +1,4 @@
-/Users/thuy.vuthiphuong/eclipse-workspace/maven_testNG_selenium/src/test/java/POM/LoginPage.java
-/Users/thuy.vuthiphuong/eclipse-workspace/maven_testNG_selenium/src/test/java/TC/LoginTest.java
-/Users/thuy.vuthiphuong/eclipse-workspace/maven_testNG_selenium/src/test/java/common/Base.java
+/Users/thinh.tranquoc/works/test/demo/src/test/java/runner/CucumberRunner.java
+/Users/thinh.tranquoc/works/test/demo/src/test/java/common/Base.java
+/Users/thinh.tranquoc/works/test/demo/src/test/java/stepDefinitions/LoginTest.java
+/Users/thinh.tranquoc/works/test/demo/src/test/java/POM/LoginPage.java

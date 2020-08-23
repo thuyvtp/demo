@@ -3,49 +3,71 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-21T09:18:32.699Z",
-        "line": 2,
-        "name": "Could not execute Cucumber",
+        "start_timestamp": "2020-08-23T17:31:39.389Z",
+        "line": 4,
+        "name": "Login seller center",
         "description": "",
-        "id": "failure;could-not-execute-cucumber",
+        "id": "login;login-seller-center",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 0,
+              "duration": 8050749741,
               "status": "passed"
             },
-            "line": 3,
-            "name": "Cucumber could not execute",
+            "line": 5,
+            "name": "User open a page",
             "match": {
-              "arguments": [],
-              "location": "io.cucumber.core.Failure.cucumber_could_not_execute()"
+              "location": "LoginTest.user_open_a_page_something()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat POM.LoginPage.InputUserName(LoginPage.java:31)\n\tat stepDefinitions.LoginTest.user_input_correct_email(LoginTest.java:27)\n\tat ✽.user input correct email(file:src/test/java/features/Login.feature:6)\n",
+              "duration": 1289349,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user input correct email",
+            "match": {
+              "location": "LoginTest.user_input_correct_email()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 0,
-              "error_message": "io.cucumber.core.exception.CucumberException: No backends were found. Please make sure you have a backend module on your CLASSPATH.",
-              "status": "failed"
+              "duration": 12857,
+              "status": "skipped"
             },
-            "line": 4,
-            "name": "Cucumber will report this error:",
+            "line": 7,
+            "name": "user input correct password",
             "match": {
-              "arguments": [],
-              "location": "io.cucumber.core.Failure.cucumber_reports_this_error()"
+              "location": "LoginTest.user_input_correct_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4016,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Verify user login success",
+            "match": {
+              "location": "LoginTest.verify_user_login_success()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Test run failed",
-    "description": "There were errors during the execution",
-    "id": "failure",
+    "name": "Login",
+    "description": "",
+    "id": "login",
     "keyword": "Feature",
-    "uri": "classpath:io/cucumber/core/failure.feature",
+    "uri": "file:src/test/java/features/Login.feature",
     "tags": []
   }
 ]

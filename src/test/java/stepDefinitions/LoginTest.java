@@ -1,16 +1,15 @@
 package stepDefinitions;
 
 import common.Base;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import POM.LoginPage;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
-import cucumber.api.java.en.Then;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
-import cucumber.api.java.en.And;
 
 
 
@@ -18,7 +17,7 @@ public class LoginTest extends Base {
 	private WebDriver driver;
 	LoginPage lgPage = new LoginPage(driver);
 	
-    @Given("^User open a page \"([^\"]*)\"$")
+    @Given("^User open a page$")
     public void user_open_a_page_something()  {
        super.before();
     }

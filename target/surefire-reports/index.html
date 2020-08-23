@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Test_runner" class="navigator-link">
-              <span class="suite-name border-failed">Test runner</span>
+              <span class="suite-name border-skipped">Test runner</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_runner" class="hide-methods failed suite-Test_runner"> (hide)</a> <!-- hide-methods failed suite-Test_runner -->
-                      <a href="#" panel-name="suite-Test_runner" class="show-methods failed suite-Test_runner"> (show)</a> <!-- show-methods failed suite-Test_runner -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test_runner" class="hide-methods skipped suite-Test_runner"> (hide)</a> <!-- hide-methods skipped suite-Test_runner -->
+                      <a href="#" panel-name="suite-Test_runner" class="show-methods skipped suite-Test_runner"> (show)</a> <!-- show-methods skipped suite-Test_runner -->
                     </span>
-                    <div class="method-list-content failed suite-Test_runner">
+                    <div class="method-list-content skipped suite-Test_runner">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_runner" title="runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login seller center&quot;, &quot;Optional[Login]&quot;)">runScenario("Login seller center", "Optional[Login]")</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_runner" title="runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login seller center&quot;, &quot;Login&quot;)">runScenario("Login seller center", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Test_runner -->
+                    </div> <!-- method-list-content skipped suite-Test_runner -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,30 +117,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_runner" class="panel Test_runner">
-          <div class="suite-Test_runner-class-failed">
+          <div class="suite-Test_runner-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">runner.CucumberRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login seller center&quot;, &quot;Optional[Login]&quot;)">
-                  </a> <!-- runScenario("Login seller center", "Optional[Login]") -->
+                  <a name="runScenario(&quot;Login seller center&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("Login seller center", "Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login seller center", "Optional[Login]")</span>
-                  <div class="stack-trace">io.cucumber.core.exception.CucumberException: No backends were found. Please make sure you have a backend module on your CLASSPATH.
-	at io.cucumber.core.runtime.BackendServiceLoader.get(BackendServiceLoader.java:38)
-	at io.cucumber.core.runtime.BackendServiceLoader.get(BackendServiceLoader.java:32)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:49)
-	at java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)
-	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:128)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+                  <span class="parameters">("Login seller center", "Login")</span>
+                  <div class="stack-trace">org.testng.SkipException: There are undefined steps
+	at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:60)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:62)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -148,11 +140,11 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_runner-class-failed -->
+          </div> <!-- suite-Test_runner-class-skipped -->
         </div> <!-- panel Test_runner -->
         <div panel-name="test-xml-Test_runner" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/thuy.vuthiphuong/eclipse-workspace/maven_testNG_selenium_cucumber/src/test/resources/testng.xml</span>
+            <span class="header-content">/Users/thinh.tranquoc/works/test/demo/src/test/resources/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -160,11 +152,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Test runner&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Package with subpackages&quot; verbose=&quot;0&quot;&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;runner.*&quot;/&gt;
-    &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runner.CucumberRunner&quot;/&gt;
       &lt;class name=&quot;runner.CucumberRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Package with subpackages --&gt;
@@ -179,7 +167,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Package with subpackages (2 classes)</span>
+                <span class="test-name">Package with subpackages (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,12 +205,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.CucumberRunner')
-data.setCell(0, 3, 38);
+data.setCell(0, 3, 150);
 window.suiteTableData['Test_runner']= { tableData: data, tableDiv: 'times-div-Test_runner'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 ms</span>
+              <span class="suite-total-time">Total running time: 150 ms</span>
               <div id="times-div-Test_runner">
               </div> <!-- times-div-Test_runner -->
             </div> <!-- times-div -->
@@ -254,14 +242,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Login seller center", "Optional[Login]")</span>
-                <span class="method-start">424 ms</span>
+                <span class="method-name">runScenario("Login seller center", "Login")</span>
+                <span class="method-start">138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">466 ms</span>
+                <span class="method-start">288 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
