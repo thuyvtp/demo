@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: vn.tiki.qc:common:0.0.2.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/vn/tiki/qc/common/0.0.2.4-SNAPSHOT/common-0.0.2.4-20200819.110314-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/vn/tiki/qc/common/0.0.2.4-SNAPSHOT/common-0.0.2.4-20200819.110314-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/vn/tiki/qc/common/0.0.2.4-SNAPSHOT/common-0.0.2.4-20200819.110314-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

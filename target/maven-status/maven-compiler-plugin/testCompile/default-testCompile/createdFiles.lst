@@ -1,2 +1,3 @@
-common/Base.class
+runner/CucumberRunner.class
+stepDefinitions/LoginTest.class
 POM/LoginPage.class

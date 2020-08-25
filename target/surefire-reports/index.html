@@ -141,7 +141,10 @@
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:115)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-... Removed 29 stack frames
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -160,11 +163,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Test runner&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Package with subpackages&quot; verbose=&quot;0&quot;&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;runner.*&quot;/&gt;
-    &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runner.CucumberRunner&quot;/&gt;
       &lt;class name=&quot;runner.CucumberRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Package with subpackages --&gt;
@@ -179,7 +178,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Package with subpackages (2 classes)</span>
+                <span class="test-name">Package with subpackages (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,12 +216,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.CucumberRunner')
-data.setCell(0, 3, 38);
+data.setCell(0, 3, 34);
 window.suiteTableData['Test_runner']= { tableData: data, tableDiv: 'times-div-Test_runner'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 ms</span>
+              <span class="suite-total-time">Total running time: 34 ms</span>
               <div id="times-div-Test_runner">
               </div> <!-- times-div-Test_runner -->
             </div> <!-- times-div -->
@@ -257,11 +256,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Login seller center", "Optional[Login]")</span>
-                <span class="method-start">424 ms</span>
+                <span class="method-start">606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">466 ms</span>
+                <span class="method-start">652 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
